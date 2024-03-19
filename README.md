@@ -22,8 +22,27 @@
 $$\begin{align}
 H(s)=\dfrac{sR_1C_1-1}{sR_1C_1+1} \tag{1}
 \end{align}$$
+可以得到幅度和相位分别为：
+$$\begin{align}
+|H(w)|&=1 \tag{2} \\
+\phi(w)&= -2\tan^{-1}{wR_1C_1}\tag{3}
+\end{align}$$
+对于相位关系也可以写成如下形式：
+$$\begin{align}
+\tan \frac{\phi(w)}{2}= -wR_1C_1 \tag{4}
+\end{align}$$
+这个表达式说明了其可以直接用[宽带分相网络设计](https://mp.weixin.qq.com/s/QWwqPndbAh_BrI7GuakYNw)中的切比雪夫逼近来计算，公式为：
+$$\begin{align}
+P(w) = if_l \operatorname{sn}\left(i\dfrac{4m+1}{2n}\dfrac{K(k')}{K(k)},k\right) \tag{5}
+\end{align}$$
 
-
+### 多相网络PN
+多相网络通过[宽带分相网络设计](https://mp.weixin.qq.com/s/QWwqPndbAh_BrI7GuakYNw)可以得到：
+$$\begin{align}
+P(w) &= \dfrac{f_l}{{\operatorname{dn}}\left(\dfrac{2m-1}{2n}K(k),k\right)} \tag{6} \\
+k&=\sqrt{1-{\dfrac{f_l}{f_u}}^2} \tag{7}
+\end{align}$$
+上式中的$m=0,1,2,...,n$。
 
 ## 设计举例
 设计一个移相网络，要求输入频率范围20Hz至20kHz，相位误差$\pm 1^{\circ}$：
