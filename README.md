@@ -1,5 +1,5 @@
 # APFDesign
- All Pass Filter Design using matlab
+ All Pass Filter/  Design using matlab
 
 
 ## 概述
@@ -59,5 +59,12 @@ k&=\sqrt{1-{\dfrac{f_l}{f_u}}^2} \tag{7}
 
 
 ## 参考
-<font size=2>[1] :  \
+<font size=2>[1] : [All-Pass Network Synthesis, R. Crane]\
+[2] : [Phase-Shift Network Analysis and Optimization, Kevin Schmidt,1998, 相移网络分析与优化] (公众号已经翻译)\
+[3] : [The Design of Wide-Band Phase Splitting Networks, W. SARAGA, 宽带分相网络设计](https://mp.weixin.qq.com/s/QWwqPndbAh_BrI7GuakYNw)\
+[4] : [Understanding and Designing Sequence Asymmetric Polyphase Networks, W.J. Niessen, 2006]\
+[5] : [US 3,559,042, POLYPHASE SYMMETRICAL NETWORK, 专利，对称多相网络](公众号已经翻译)\
+[6] : [AN1981 New low-power single sideband circuits, Robert J. Zavrell Jr., 1997]\
+[7] : [Matlab源码,APF网络设计软件]https://github.com/etools361/APFDesign.git\
+[8] : [模拟无源滤波器设计(十二)-宽带90°移相网络设计](https://mp.weixin.qq.com/s/MUanWcLnQjpqB-mt8CuRDw)
 </font>
