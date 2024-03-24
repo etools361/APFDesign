@@ -4,7 +4,7 @@
 % all pass filter
 %--------------------------------------------------------------------------
 function [fx] = funAllPassFilter(Fl, Fh, n)
-rad  = 180/pi;
+% rad  = 180/pi;
 % f    = logspace(floor(log10(Fl)), ceil(log10(Fh)), 500);
 F0   = sqrt(Fl*Fh);
 Flh1 = Fl/Fh;
@@ -21,10 +21,10 @@ theta = [];
 sp    = [];
 fx    = [];
 for k=0:1:n-1
-    theta(k+1) = (-1)^k*(2*k+1)*pi/(4*n)*rad;
+    theta(k+1) = (-1)^k*(2*k+1)*pi/(4*n);
     for m=0:n-1
-        px(m+1) = (+1)^m*q^(m*(m+1))*cos((2*m+1)*theta(k+1)/rad);
-        py(m+1) = (-1)^m*q^(m*(m+1))*sin((2*m+1)*theta(k+1)/rad);
+        px(m+1) = (+1)^m*q^(m*(m+1))*cos((2*m+1)*theta(k+1));
+        py(m+1) = (-1)^m*q^(m*(m+1))*sin((2*m+1)*theta(k+1));
     end
     spx(k+1) = sum(px);
     spy(k+1) = sum(py);
